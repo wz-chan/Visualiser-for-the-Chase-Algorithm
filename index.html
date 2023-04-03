@@ -8,12 +8,10 @@
     <script type="module">
         import {showOutputForEntailment} from "./js/frontend/entailment-output.js";
         import {showOutputForLossless} from "./js/frontend/lossless-output.js";
-        import {showOutputForPreservation} from "./js/frontend/preservation-output.js";
         import {showOutputForProjected} from "./js/frontend/projected-output.js";
         import {showOutputForMinimal} from "./js/frontend/minimal-output.js";
         window.showOutputForEntailment = showOutputForEntailment;
         window.showOutputForLossless = showOutputForLossless;
-        window.showOutputForPreservation = showOutputForPreservation;
         window.showOutputForProjected = showOutputForProjected;
         window.showOutputForMinimal = showOutputForMinimal;
 
@@ -34,7 +32,6 @@
             <div class="tab">
                 <button class="tabLinks" onclick="showFeature(event, 'entailment')" id="defaultShow">Entailment</button>
                 <button class="tabLinks" onclick="showFeature(event, 'lossless')">Lossless Decomposition</button>
-                <button class="tabLinks" onclick="showFeature(event, 'preservation')">Dependency Preservation</button>
                 <button class="tabLinks" onclick="showFeature(event, 'minimal')">Minimal Cover</button>
                 <button class="tabLinks" onclick="showFeature(event, 'projected')">Projected Dependencies</button>
             </div>
@@ -64,13 +61,6 @@
                     <input type="file" class="fileUploadButton" id="fileForLossless" accept=".xml">
                 </div>
                 <div class="button" onclick="showOutputForLossless()">Run Chase</div>
-            </div>
-            <div id="preservation" class="tabContent">
-                <div class="inputSegment">
-                    <h3>Select Input XML File</h3>
-                    <input type="file" class="fileUploadButton" id="fileForPreservation" accept=".xml">
-                </div>
-                <div class="button" onclick="showOutputForPreservation()">Run Chase</div>
             </div>
             <div id="minimal" class="tabContent">
                 <div class="inputSegment">
