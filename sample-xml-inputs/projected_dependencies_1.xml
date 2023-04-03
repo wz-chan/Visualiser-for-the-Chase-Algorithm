@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chase>
+  <projected_dependencies>
+    <relation>
+      <attribute>A</attribute>
+      <attribute>B</attribute>
+      <attribute>C</attribute>
+      <attribute>D</attribute>
+    </relation>
+    <dependency>
+      <lhs>
+        <attribute>A</attribute>
+      </lhs>
+      <rhs>
+        <attribute>B</attribute>
+      </rhs>
+      <type>functional</type>
+    </dependency>
+    <dependency>
+      <lhs>
+        <attribute>B</attribute>
+      </lhs>
+      <rhs>
+        <attribute>C</attribute>
+      </rhs>
+      <type>functional</type>
+    </dependency>
+    <dependency>
+      <lhs>
+        <attribute>C</attribute>
+        <attribute>D</attribute>
+      </lhs>
+      <rhs>
+        <attribute>A</attribute>
+      </rhs>
+      <type>multivalued</type>
+    </dependency>
+    <projection>
+      <attribute>A</attribute>
+      <attribute>B</attribute>
+      <attribute>C</attribute>
+    </projection>
+  </projected_dependencies>
+</chase>

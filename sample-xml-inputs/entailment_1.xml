@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chase>
+  <entailment>
+    <relation>
+      <attribute>A</attribute>
+      <attribute>B</attribute>
+      <attribute>C</attribute>
+      <attribute>D</attribute>
+    </relation>
+    <dependency>
+      <lhs>
+        <attribute>A</attribute>
+      </lhs>
+      <rhs>
+        <attribute>B</attribute>
+        <attribute>C</attribute>
+      </rhs>
+      <type>multivalued</type>
+    </dependency>
+    <dependency>
+      <lhs>
+        <attribute>D</attribute>
+      </lhs>
+      <rhs>
+        <attribute>C</attribute>
+      </rhs>
+      <type>functional</type>
+    </dependency>
+    <dependency_chased>
+      <lhs>
+        <attribute>A</attribute>
+      </lhs>
+      <rhs>
+        <attribute>C</attribute>
+      </rhs>
+      <type>functional</type>
+    </dependency_chased>
+  </entailment>
+</chase>

@@ -1,0 +1,229 @@
+html {
+  overflow-y: overlay;
+}
+
+h1 {
+  font-weight: normal;
+  color: #ffffff;
+  font-size: 1.3em;
+  margin: 0px;
+  padding: 0px;
+}
+
+h2 {
+  font-family: 'Courgette', cursive;
+  font-weight: normal;
+  color: #d9d9d9;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  font-weight: normal;
+  color: #0088cc;
+  font-size: 1em;
+  margin: 0px;
+  padding: 0px;
+}
+
+p {
+  color: #ffffff;
+  margin: 5px 0 5px 0;
+}
+
+body {
+  background-color: #0d0d0d;
+  margin: 0 0 10px 0;
+  font-family: Arial;
+}
+
+header {            
+  background-color: #262626;
+  margin: 10px 0 5px 0;           
+  padding: 10px 0 10px 12px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #333333
+}
+
+input[type="radio"] {
+  font-size: 0.9em;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 0px;
+  margin-top: -1px;
+  vertical-align: middle;
+}
+
+input[type="file"] {
+  font-size: 0.9em;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+input::file-selector-button {
+  opacity: 0.9;
+  cursor: pointer;
+  background-color: #333333;
+  color: #ffffff;
+  border: thin solid #1a1a1a;
+  border-radius: 5px;
+  padding: 3px;
+  width: 110px;
+  text-align: center;
+}
+
+input::file-selector-button:hover {
+  background-color: #4d4d4d;
+}
+
+input::file-selector-button:active {
+  border: thin solid #0088cc;;
+}
+
+label {
+  font-size: 0.9em;
+}
+
+table {
+  border-collapse: collapse;
+  color: #ffffff;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+td, th {
+  border: 1px solid #ffffff;
+  padding: 6px;
+  font-weight: normal;
+}
+
+.wrapper {
+  margin: auto;
+  width: 1000px;
+}
+
+.logo{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.title {
+  display: inline-block;
+  vertical-align: middle; 
+  padding-left: 10px;
+}
+
+.tab {
+  overflow: hidden;
+  background-color: #262626;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #333333;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  color: #ffffff;
+}
+
+.tab button:hover {
+  background-color: #4d4d4d;
+  color: #ffffff;
+}
+
+.tab button.active {
+  background-color: #ccc;
+  color: #000000;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #333333;
+  color: #ffffff;
+}
+
+.button {
+  opacity: 0.9;
+  cursor: pointer;
+  background-color: #333333;
+  color: #ffffff;
+  border: thin solid #1a1a1a;
+  border-radius: 5px;
+  padding: 3px;
+  text-align: center;
+  font-size: 0.9em;
+  display: inline-block;
+  width: 102px;
+}
+
+.button:hover {
+  background-color: #4d4d4d;
+}
+
+.button:active {
+  border: thin solid #0088cc;;
+}
+
+.inputSegment {
+  margin-bottom: 5px;
+}
+
+.userInputSegment {
+  margin-bottom: 5px;
+}
+
+#output {
+  display: none;
+}
+
+.step {
+  padding: 6px 12px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #333333;
+}
+
+#userInput {
+  padding: 6px 12px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #333333;
+  display: none;
+}
+
+#notation {
+  padding: 6px 12px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #333333;
+  display: none;
+}
+
+#notation p {
+  font-size: 0.9em;
+}
+
+.selectChaseVariation {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.fileUploadButton {
+  display: inline-block;
+  font-size: 0.9em;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
